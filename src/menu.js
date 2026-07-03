@@ -28,4 +28,4 @@ content.appendChild(menu);
 
 export default createMenuPage
 
-createMenuPage();
+ 
