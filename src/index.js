@@ -4,7 +4,7 @@ import createHomePage from "./home.js";
 import createMenuPage from "./menu.js";
 import createAboutPage from "./about.js";
 
-console.log("Webpack działa 🚀");
+console.log("Restaurant app 🚀");
 
 function render(pageFunction) {
     const content = document.getElementById("content");
@@ -37,18 +37,16 @@ function createButton(text, pageFunction) {
 // NAV
 const nav = document.createElement("nav");
 
-// buttons
 const homeButton = createButton("Home", createHomePage);
 const menuButton = createButton("Menu", createMenuPage);
 const aboutButton = createButton("About", createAboutPage);
 
-// append nav
 nav.appendChild(homeButton);
 nav.appendChild(menuButton);
 nav.appendChild(aboutButton);
 
 document.body.appendChild(nav);
 
-// initial render
+// START
 render(createHomePage);
 setActive(homeButton);

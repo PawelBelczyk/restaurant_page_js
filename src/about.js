@@ -8,7 +8,8 @@ export default function createAboutPage() {
     heading.textContent = "About Us";
 
     const description = document.createElement("p");
-    description.textContent = "Restaurant near the sea and mountains.";
+    description.textContent =
+        "We are a modern restaurant focused on high-quality ingredients, sea view atmosphere and unforgettable dining experience.";
 
     about.appendChild(heading);
     about.appendChild(description);
