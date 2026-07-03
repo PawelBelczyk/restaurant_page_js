@@ -1,23 +1,23 @@
 
-console.log("WEBPACK CONFIG ZAŁADOWANY");
-
+ 
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
 
   entry: "./src/index.js",
 
 output: {
   path: path.resolve(__dirname, "dist"),
   filename: "main.js",
-  publicPath: "/restaurant_page_js/"
+  publicPath: "/restaurant_page_js/",
 },
 
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/template.html",
+   new HtmlWebpackPlugin({
+  template: "./src/template.html",
+  base: "/restaurant_page_js/",
     }),
   ],
 
