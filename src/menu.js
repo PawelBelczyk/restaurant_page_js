@@ -1,3 +1,6 @@
+
+
+
 export default function createMenuPage() {
     const content = document.getElementById("content");
 
@@ -11,7 +14,7 @@ export default function createMenuPage() {
         {
             name: "Grilled Seafood Platter",
             desc: "Fresh seafood with herbs and lemon.",
-            img: "https://images.unsplash.com/photo-1604908177522-040f1aebad3a"
+            img: "https://www.magnific.com/premium-ai-image/delicious-grilled-seafood-platter-recipe-with-lobster-shrimp-scallops_318700763.html"
         },
         {
             name: "Steak Deluxe",
