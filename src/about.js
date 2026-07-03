@@ -1,25 +1,17 @@
-
-
-
-function createAboutPage() {
-
- 
-
+export default function createAboutPage() {
+    const content = document.getElementById("content");
 
     const about = document.createElement("div");
     about.classList.add("about");
 
-    const heading = document.createElement("h2");
-    heading.textContent = "Restaurant near the sea";
+    const heading = document.createElement("h1");
+    heading.textContent = "About Us";
 
     const description = document.createElement("p");
-    description.textContent = "My restaurant is a very beatiful place near the sea and the mountains, you wish to be here";
+    description.textContent = "Restaurant near the sea and mountains.";
 
-about.appendChild(heading);
-about.appendChild(description);
+    about.appendChild(heading);
+    about.appendChild(description);
 
-content.appendChild(about);
+    content.appendChild(about);
 }
-
-
-export default createAboutPage;

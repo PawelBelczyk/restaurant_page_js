@@ -1,14 +1,14 @@
-import path from "node:path";
-import HtmlWebpackPlugin from "html-webpack-plugin";
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-export default {
+module.exports = {
   mode: "development",
 
   entry: "./src/index.js",
 
   output: {
     filename: "main.js",
-    path: path.resolve(process.cwd(), "dist"),
+    path: path.resolve(__dirname, "dist"),
     clean: true,
   },
 
@@ -22,5 +22,14 @@ export default {
     static: "./dist",
     open: true,
     port: 3000,
+  },
+
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
   },
 };

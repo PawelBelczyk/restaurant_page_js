@@ -1,30 +1,17 @@
+export default function createMenuPage() {
+    const content = document.getElementById("content");
 
+    const menu = document.createElement("div");
+    menu.classList.add("menu");
 
+    const heading = document.createElement("h1");
+    heading.textContent = "Menu";
 
-function createMenuPage() {
+    const description = document.createElement("p");
+    description.textContent = "Our best dishes await you.";
 
+    menu.appendChild(heading);
+    menu.appendChild(description);
 
-  
-
-const menu =document.createElement("div");
-menu.classList.add("menu");
-
-const heading= document.createElement("h2");
-heading.textContent = "First Dish - Kalmary";
-
-const description = document.createElement("p");
-description.textContent = "Kalmars are the best luxury dish the hummanity is discovered";
-
-menu.appendChild(heading);
-menu.appendChild(description);
-
-content.appendChild(menu);
-
-
-
+    content.appendChild(menu);
 }
-
-
-export default createMenuPage
-
- 
