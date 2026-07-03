@@ -4,8 +4,7 @@
 function createMenuPage() {
 
 
-    const content = document.getElementById("content");
-    content.innerHTML = "";
+  
 
 const menu =document.createElement("div");
 menu.classList.add("menu");

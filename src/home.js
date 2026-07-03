@@ -2,9 +2,7 @@
 
     function createHomePage() {
 
-        const content = document.getElementById("content");
-        content.innerHTML ="";
-        
+    
         
         const home = document.createElement("div");
         home.classList.add("home");

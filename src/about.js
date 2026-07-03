@@ -3,8 +3,7 @@
 
 function createAboutPage() {
 
-    const content = document.getElementById("content");
-    content.innerHTML ="";
+ 
 
 
     const about = document.createElement("div");

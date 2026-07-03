@@ -16,7 +16,7 @@ menu.textContent ="Menu";
  
 
 menu.addEventListener("click", () => {
-    createMenuPage()
+    render(createMenuPage )
 });
 
 
@@ -24,14 +24,14 @@ const about = document.createElement("button");
 about.textContent ="About";
  
 about.addEventListener("click", () => {
-    createAboutPage()
+    render(createAboutPage )
 });
 
 const home = document.createElement("button");
 home.textContent="Home";
  
 home.addEventListener("click", () => {
-    createHomePage()
+    render(createHomePage )
 });
 
 nav.appendChild(home);
@@ -41,5 +41,11 @@ nav.appendChild(menu);
 document.body.appendChild(nav);
 
 
+
+function render(pageFunction) {
+    const content = document.getElementById("content");
+    content.innerHTML = "";
+    pageFunction();
+}
 
 createHomePage();
