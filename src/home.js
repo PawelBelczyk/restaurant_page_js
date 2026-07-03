@@ -1,3 +1,7 @@
+import indoor from "./images/indoor.jpg"
+
+
+
 export default function createHomePage() {
     const content = document.getElementById("content");
 
@@ -11,7 +15,7 @@ export default function createHomePage() {
     description.textContent = "Luxury restaurant near the sea with fresh ingredients and modern cuisine.";
 
     const img = document.createElement("img");
-    img.src = "https://images.unsplash.com/photo-1555992336-03a23c9b4a83";
+    img.src = indoor;
     img.alt = "Restaurant interior";
 
     home.appendChild(heading);

@@ -1,3 +1,6 @@
+
+console.log("WEBPACK CONFIG ZAŁADOWANY");
+
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -29,6 +32,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpe?g|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },
